@@ -18,7 +18,6 @@ def ensure_dirs():
     SUM_DIR.mkdir(parents=True, exist_ok=True)
 
 def run_analysis(data_dir: Path = DATA_DIR, out_dir: Path = OUT_DIR) -> None:
-    """Replicates the workflow of the original script across the dataset tree."""
     global PER_FILE_DIR, SUM_DIR
     # rebind output dirs if the user passed a different out_dir
     PER_FILE_DIR = out_dir / "per_file"

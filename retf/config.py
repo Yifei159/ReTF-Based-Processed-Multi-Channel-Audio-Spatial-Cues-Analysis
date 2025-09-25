@@ -3,7 +3,7 @@ import numpy as np
 
 THIS_FILE_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = THIS_FILE_DIR.parent
-DATA_DIR = PROJECT_ROOT / "Spatial-U-Net"   # This is just the project that I'm working on
+DATA_DIR = PROJECT_ROOT / "Spatial-U-Net"   # This is just the project that I'm currently working on
 OUT_DIR = PROJECT_ROOT / "analysis_spatial_cues"
 PER_FILE_DIR = OUT_DIR / "per_file"
 SUM_DIR = OUT_DIR / "summaries"

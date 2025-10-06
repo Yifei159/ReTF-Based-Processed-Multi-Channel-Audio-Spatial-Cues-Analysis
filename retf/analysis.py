@@ -46,7 +46,7 @@ def run_analysis(data_dir: Path = DATA_DIR, out_dir: Path = OUT_DIR) -> None:
         snr_db_raw = extract_snr_from_parts(parts_full)
         snr_plot = -abs(snr_db_raw) if not math.isnan(snr_db_raw) else float("nan" )
 
-        # -------------- ReTF distance --------------
+        # -------------- ReTF distance -------------
         res = compute_theta_for_file(mixture, output, clean)
 
         # -------------- Naming --------------

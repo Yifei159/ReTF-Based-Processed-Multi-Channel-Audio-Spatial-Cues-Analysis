@@ -17,7 +17,7 @@ def gcc_phat_masked(x1: np.ndarray, x2: np.ndarray, fs: int, active_mask: np.nda
     L = min(Z1.shape[1], Z2.shape[1], len(active_mask))
     if L <= 0:
         return np.zeros(nfft)
-    Z1 = Z1[:, :L]
+    Z1 = Z1[:, :L] 
     Z2 = Z2[:, :L]
     act = np.asarray(active_mask[:L], dtype=bool)
     if act.sum() == 0:

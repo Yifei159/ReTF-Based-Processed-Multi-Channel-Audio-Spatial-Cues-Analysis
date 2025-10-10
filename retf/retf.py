@@ -70,6 +70,7 @@ def compute_theta_for_file(mixture_path, output_path, clean_path) -> Dict:
         a_out = cw_rtf(phi_yy, phi_vhatvhat, q0)
         theta[f_idx] = hermitian_angle(a_in, a_out)
 
+
     band_mask = (freqs >= BAND_LOW_HZ) & (freqs <= BAND_HIGH_HZ)
     mean_theta_full = float(np.mean(theta))
     mean_theta_band = float(np.mean(theta[band_mask])) if np.any(band_mask) else float("nan")

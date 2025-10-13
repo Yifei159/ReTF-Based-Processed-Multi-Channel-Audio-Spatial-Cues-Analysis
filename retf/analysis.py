@@ -13,6 +13,7 @@ from .plots import (plot_theta_curve, make_fig2_selected_lines, make_fig3_avgThe
 from .gcc_phat import (estimate_doa_gccphat_from_multichannel, angle_between_unit_vectors_deg, align_to_reference_hemisphere)
 from .geometry import get_mic_geometry_matrix
 
+
 def ensure_dirs():
     PER_FILE_DIR.mkdir(parents=True, exist_ok=True)
     SUM_DIR.mkdir(parents=True, exist_ok=True)

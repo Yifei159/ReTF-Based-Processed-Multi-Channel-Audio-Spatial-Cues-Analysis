@@ -43,7 +43,6 @@ def compute_theta_for_file(mixture_path, output_path, clean_path) -> Dict:
     output, sr_o = read_audio(output_path)
     clean, sr_c = read_audio(clean_path)
 
-    # Basic sanity: all streams must share sampling rate
     if not (sr_m == sr_o == sr_c):
         raise ValueError(f"Sampling rates don't match: mixture={sr_m}, output={sr_o}, clean={sr_c}")
     sr = sr_m
